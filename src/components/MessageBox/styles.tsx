@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-    width: 48%;
-    height: 260px;
+    width: 32%;
+    height: 110px;
     background-color: ${props => props.theme.colors.tertiary};
     color: ${props => props.theme.colors.white};
 
@@ -15,13 +15,27 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
+    transition: all .3s;
+    position: relative;
+
+    &:hover {
+        opacity: .7;
+        transform: translateX(10px);
+    }
+
+
     > header img{
-        width: 35px;
+        width: 20px;
         margin-left: 7px;
     }
 
     > header p{
-        font-size: 18px;
+
+        font-size: 14px;
+    }
+
+    > footer span{
+        font-size: 14px;
     }
 `;
 

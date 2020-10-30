@@ -17,10 +17,10 @@ const MessageBox: React.FC<IMessageBoxProps> = (({title, description, footerText
     return(
         <Container>
             <header>
-                <h1>  
+                <h3>  
                      {title}
                      <img src={icon} alt="" /> 
-                </h1>
+                </h3>
                 <p>
                     {description}
                 </p>

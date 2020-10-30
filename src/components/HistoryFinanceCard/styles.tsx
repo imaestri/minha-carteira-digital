@@ -18,9 +18,9 @@ export const Container = styled.li`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     cursor: pointer;
     transition: all .3s;
-
     position: relative;
 
     &:hover {

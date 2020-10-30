@@ -48,5 +48,6 @@ export default [
   {"description":"Compras do mês",        "amount":"700.00","type":"saída","frequency":"recorrente","date":"2020-07-25"},
   {"description":"Cafeteira",             "amount":"250.00","type":"saída","frequency":"eventual",  "date":"2020-07-26"},
   {"description":"Pizza",                 "amount":"60.00", "type":"saída","frequency":"eventual",  "date":"2020-07-19"},
- 
+  {"description":"Teclado",               "amount":"160.00", "type":"saída","frequency":"eventual",  "date":"2020-10-19"}
+  
 ]
