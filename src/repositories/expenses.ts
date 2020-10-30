@@ -48,6 +48,10 @@ export default [
   {"description":"Compras do mês",        "amount":"700.00","type":"saída","frequency":"recorrente","date":"2020-07-25"},
   {"description":"Cafeteira",             "amount":"250.00","type":"saída","frequency":"eventual",  "date":"2020-07-26"},
   {"description":"Pizza",                 "amount":"60.00", "type":"saída","frequency":"eventual",  "date":"2020-07-19"},
-  {"description":"Teclado",               "amount":"160.00", "type":"saída","frequency":"eventual",  "date":"2020-10-19"}
+  {"description":"Aluguel",               "amount":"571.87", "type":"saída","frequency":"recorrente",  "date":"2020-10-31"},
+  {"description":"Despesa Leticia",       "amount":"355.08", "type":"saída","frequency":"eventual",  "date":"2020-10-31"},
+  {"description":"Cartão de credito",     "amount":"932.24", "type":"saída","frequency":"eventual",  "date":"2020-10-31"},
+  {"description":"Condominio/Luz",            "amount":"215.00", "type":"saída","frequency":"recorrente",  "date":"2020-10-31"},
+  
   
 ]

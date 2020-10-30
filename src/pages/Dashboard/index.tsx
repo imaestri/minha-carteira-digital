@@ -14,8 +14,11 @@ import sadImg from '../../assets/sad.svg';
 import thinkingImg from '../../assets/thinking.svg';
 
 import { Container, Content } from './styles';
+import PieChartBox from '../../components/PieChartBox';
+
 
 const Dashboard: React.FC = () => {
+
     const [monthSelected, setMonthSelected] = useState<number>(new Date().getMonth() + 1);
     const [yearSelected, setYearSelected] = useState<number>(new Date().getFullYear());
 
@@ -132,6 +135,34 @@ const Dashboard: React.FC = () => {
     }, [totalBalance]);
     
     
+    const relationExpensesVersusGains = useMemo(() => {
+        const total = totalGains + totalExpenses;
+
+        const percentGains = (totalGains / total) * 100;
+        const percentExpenses = (totalExpenses / total) * 100;
+
+        const data = [
+            {
+                name: "Entradas",
+                value: totalExpenses,
+                percent: Number(percentGains.toFixed(1)),
+                color: '#E44C4e'
+            },
+
+            {
+                name: "Saídas",
+                value: totalExpenses,
+                percent: Number(percentExpenses.toFixed(1)),
+                color: '#F7931B'
+
+            }
+        ]
+
+        return data;
+
+    }, [totalGains, totalExpenses]);
+
+
     const handleMonthSelected = (month: string) => {
         try {
             const parseMonth = Number(month);
@@ -188,6 +219,9 @@ const Dashboard: React.FC = () => {
                 />
                 <MessageBox
                     {...message}
+                />
+                <PieChartBox
+                    data={relationExpensesVersusGains}
                 />
             </Content>
         </Container>
