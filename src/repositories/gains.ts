@@ -10,6 +10,8 @@ export default [
   { "description": "Salário",     "amount": "2500.12", "type": "entrada", "frequency": "recorrente", "date": "2020-06-10" }, 
   { "description": "Salário",     "amount": "2500.00", "type": "entrada", "frequency": "recorrente", "date": "2020-07-10" },
   { "description": "Salário",     "amount": "2500.00", "type": "entrada", "frequency": "recorrente", "date": "2020-11-01" },
-  { "description": "Carteira",     "amount": "749.72", "type": "entrada", "frequency": "recorrente", "date": "2020-11-01" }
-
+  { "description": "Carteira",     "amount": "749.72", "type": "entrada", "frequency": "recorrente", "date": "2020-11-01" },
+  { "description": "Salário",     "amount": "2500.00", "type": "entrada", "frequency": "recorrente", "date": "2020-11-02" },
+  { "description": "Carteira",     "amount": "749.72", "type": "entrada", "frequency": "recorrente", "date": "2020-11-02" }
+  
 ]

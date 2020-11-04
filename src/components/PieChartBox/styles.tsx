@@ -20,10 +20,9 @@ export const Container = styled.div`
   display: flex;
 
   transition: all .3s;
-    position: relative;
+  position: relative;
 
     &:hover {
-        opacity: .7;
         transform: translateX(10px);
     }
 

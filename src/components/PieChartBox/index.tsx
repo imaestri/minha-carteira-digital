@@ -32,12 +32,7 @@ const PieChartBox: React.FC<IPieChartProps> = ({data}) => (
                             <span>{indicator.name}</span>
                         </Legend>
                     ))
-                }
-                {/* <Legend color="#E44C4E">
-                    <div>95%</div>
-                    <span>Saidas</span>
-                </Legend> */}
-                
+                }  
             </LegendContainer>
         </SideLeft>
         <SideRight>

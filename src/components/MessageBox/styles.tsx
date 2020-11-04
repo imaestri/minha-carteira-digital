@@ -19,7 +19,6 @@ export const Container = styled.div`
     position: relative;
 
     &:hover {
-        opacity: .7;
         transform: translateX(10px);
     }
 

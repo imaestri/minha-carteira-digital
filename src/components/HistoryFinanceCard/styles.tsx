@@ -24,7 +24,6 @@ export const Container = styled.li`
     position: relative;
 
     &:hover {
-        opacity: .7;
         transform: translateX(10px);
     }
 
